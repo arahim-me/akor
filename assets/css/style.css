@@ -1,0 +1,27 @@
+/* Basic CSS file imported here */
+@import url('custom.css');
+
+
+
+
+/* Footer Design */
+footer .footer-menu {
+    gap: 8px;
+}
+
+.footer-menu .list {
+    gap: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+footer .subscribe-form{
+    max-width: 600px;
+    width: 100%;
+}
+footer .subscribe-form input{
+    flex-grow: 2;
+}
+footer .subscribe-form .btn{
+    flex-grow: 1;
+}

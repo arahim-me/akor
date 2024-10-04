@@ -1,0 +1,194 @@
+/* Import Font here (Poppins font) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Google Icon Imported here */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
+
+
+/* Basic Setup */
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #e62e04;
+    --hov-primary: #ac2102;
+    --dark: #1b1b28;
+    --soft-dark: #25252e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+section {
+    padding: 24px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    padding: 10px 16px;
+    outline: none;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-grow: 1;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.start {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.end {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 45px;
+}
+
+
+
+
+/* Formatting */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Components */
+.btn {
+    cursor: pointer;
+    width: fit-content;
+    height: auto;
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+    border: transparent;
+}
+
+hr {
+    border-bottom: 0.5px;
+    margin: 35px auto;
+    width: 100%;
+}
+
+/* Sidebar Design */
+.sidebar {
+    position: absolute;
+    top: 40%;
+}
+
+.sidebar .btn {
+    background: var(--primary);
+    color: var(--white);
+    height: 50px;
+    gap: 5px;
+    border-radius: 25px;
+    transition: all 0.8s ease;
+
+}
+
+.sidebar .btn .circle {
+    transition: all 1s cubic-bezier(0.65, 0, .076, 1);
+}
+
+.sidebar .btn:hover {
+    transition: all 0.5s;
+}
+
+.sidebar .text {
+    display: none;
+    transition: 1s ;
+
+}
+
+.sidebar .btn:hover .text {
+    display: inline-block;
+
+}
+
+/* Footer section design */
+footer {
+    background: var(--soft-dark);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white);
+}
