@@ -1,9 +1,40 @@
 /* Basic CSS file imported here */
 @import url('custom.css');
 
+/* Header part design */
+/* Navigaion design */
 
 
+nav{
+    padding: 20px 0;
+}
+nav .search {
+    width: 100%;
+}
 
+nav .search .input-field {
+    width: 90%;
+    border-radius: 20px;
+    position: relative;
+    border: none;
+    outline: 1px solid var(--gray);
+}
+nav .search .input-btn {
+    padding: 0;
+    position: relative;
+    right: 56px;
+    margin-top: 3px;
+    border: none;
+    background: transparent;
+    color: var(--gray);
+}
+nav .search .input-btn span{
+    font-size: 30px;
+}
+nav .menu-icon span{
+    margin-top: 6px;
+    color: var(--gray);
+}
 /* Footer Design */
 footer .footer-menu {
     gap: 8px;
@@ -15,13 +46,15 @@ footer .footer-menu {
     margin-bottom: 20px;
 }
 
-footer .subscribe-form{
+footer .subscribe-form {
     max-width: 600px;
     width: 100%;
 }
-footer .subscribe-form input{
+
+footer .subscribe-form input {
     flex-grow: 2;
 }
-footer .subscribe-form .btn{
+
+footer .subscribe-form .btn {
     flex-grow: 1;
 }
