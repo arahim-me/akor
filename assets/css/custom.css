@@ -25,7 +25,9 @@
     color: var(--white);
 }
 
-
+.text-primary{
+    color: var(--primary);
+}
 
 /* Basic Design */
 * {
@@ -37,6 +39,7 @@
 body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    position: relative;
 }
 
 a {
@@ -130,6 +133,13 @@ input {
     text-transform: lowercase;
 }
 
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
 ul li {
     list-style-type: none;
 }
@@ -137,8 +147,26 @@ ul li {
 .hidden {
     display: none;
 }
-
+.bordered{
+    border: 1px solid var(--gray);
+}
+.title{
+    text-transform: capitalize;
+    color: var(--soft-dark);
+}
+.top-text{
+    padding: 20px 0;
+}
 /* Components */
+
+/* Cards */
+.cards{
+    padding: 15px;
+}
+.card{
+    max-width: 600px;
+    padding: 25px 15px;
+}
 .btn {
     cursor: pointer;
     width: fit-content;
