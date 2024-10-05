@@ -16,6 +16,18 @@
     --gray: #9d9da6;
 }
 
+/* Colors */
+.bg-primary{
+    background: var(--primary);
+    color: var(--white);
+}
+.text-white{
+    color: var(--white);
+}
+
+
+
+/* Basic Design */
 * {
     margin: 0;
     padding: 0;
@@ -102,7 +114,6 @@ input {
 .logo {
     max-height: 45px;
 }
-
 
 
 

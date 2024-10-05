@@ -4,7 +4,7 @@
 /* Header part design */
 /* Navigaion design */
 
-
+/* Top Navigation */
 nav{
     padding: 20px 0;
 }
@@ -34,6 +34,19 @@ nav .search .input-btn span{
 nav .menu-icon span{
     margin-top: 6px;
     color: var(--gray);
+}
+
+/* Main Navigation */
+.main-nav{
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.main-nav .menu a{
+    color: var(--text-white);
+}
+.main-nav .menu {
+    gap: 30px;
 }
 /* Footer Design */
 footer .footer-menu {
