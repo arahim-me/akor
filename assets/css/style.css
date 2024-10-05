@@ -5,9 +5,10 @@
 /* Navigaion design */
 
 /* Top Navigation */
-nav{
+nav {
     padding: 20px 0;
 }
+
 nav .search {
     width: 100%;
 }
@@ -19,6 +20,7 @@ nav .search .input-field {
     border: none;
     outline: 1px solid var(--gray);
 }
+
 nav .search .input-btn {
     padding: 0;
     position: relative;
@@ -28,44 +30,75 @@ nav .search .input-btn {
     background: transparent;
     color: var(--gray);
 }
-nav .search .input-btn span{
+
+nav .search .input-btn span {
     font-size: 30px;
 }
-nav .menu-icon span{
+
+nav .menu-icon span {
     margin-top: 6px;
     color: var(--gray);
 }
 
 /* Main Navigation */
-.main-nav{
+.main-nav {
     margin: 10px 0;
     padding: 10px 0;
 }
 
-.main-nav .menu a{
+.main-nav .menu a {
     color: var(--text-white);
 }
+
 .main-nav .menu {
     gap: 30px;
 }
 
 /* Featured Categories Design */
-.categories img{
+.categories img {
     max-width: 150px;
     height: auto;
 }
+
+.top-text .link {
+    color: #3490f3;
+    display: inline-block;
+}
+
+.top-text .link:hover {
+    color: var(--primary);
+    transition: all 0.5s ease;
+}
+
+.top-text .link::after {
+    color: var(--primary);
+    border-bottom: 1px solid;
+    transition: all 0.5s ease;
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+.top-text .link:hover::after {
+    z-index: -10;
+  animation: fill 1s forwards;
+  opacity: 1;
+}
+
 /* Featured Products Design */
 
-.product-card{
+.product-card {
     max-width: 220px;
 }
 
-.product-card .price{
+.product-card .price {
     width: 100%;
 }
-.product-card .price del{
+
+.product-card .price del {
     color: var(--primary);
 }
+
 /* Footer Design */
 footer .footer-menu {
     gap: 8px;
